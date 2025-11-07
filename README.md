@@ -1,7 +1,7 @@
 # myfaqsdump
 This is intended for Interview preparation all FAQs and Topics to refer all resources at One Place for self ref 
 
-[HashMap](#hasmap) - [SynchronizedHashMap](#synchronizedhashmap) - <a href="#CunccurentHashMap"> CunccurentHashMap </a>
+[HashMap](#hasmap) - [SynchronizedHashMap](#synchronizedhashmap) - <a href="#ConcurrentHashMap"> ConcurrentHashMap </a>
 
 String - StringBuffer - StringBuilder - StringTokenizer
 
@@ -46,6 +46,6 @@ in Java 8 and later, a balanced tree within that bucket.
 
 ## SynchronizedHashMap
 
-## CunccurentHashMap  
+## ConcurrentHashMap  
 some content
 
