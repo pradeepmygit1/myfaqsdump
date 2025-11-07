@@ -1,7 +1,7 @@
 # myfaqsdump
 This is intended for Interview preparation all FAQs and Topics to refer all resources at One Place for self ref 
 
-[HashMap](#hasmap) - [SynchronizedHashMap](#synchronizedhashmap) - <a href="#ConcurrentHashMap"> ConcurrentHashMap </a>
+[HashMap](#hasmap) - <a href="#HashMap"> HashMap </a> - [SynchronizedHashMap](#synchronizedhashmap) - <a href="#ConcurrentHashMap"> ConcurrentHashMap </a>
 
 String - StringBuffer - StringBuilder - StringTokenizer
 
