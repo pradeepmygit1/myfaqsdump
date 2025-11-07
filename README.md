@@ -47,4 +47,5 @@ in Java 8 and later, a balanced tree within that bucket.
 ## SynchronizedHashMap
 
 ## ConcurrentHashMap  
+A ConcurrentHashMap is a thread-safe, high-performance data structure in Java that allows multiple threads to access and modify it concurrently without locking the entire map. It achieves this by applying locks only to specific segments or nodes when a write operation occurs, rather than blocking all threads as a synchronized map would. This makes it ideal for multi-threaded applications, and it does not permit null keys or values.
 
