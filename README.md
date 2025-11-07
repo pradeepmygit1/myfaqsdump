@@ -47,5 +47,4 @@ in Java 8 and later, a balanced tree within that bucket.
 ## SynchronizedHashMap
 
 ## ConcurrentHashMap  
-some content
 
