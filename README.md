@@ -47,5 +47,22 @@ in Java 8 and later, a balanced tree within that bucket.
 ## SynchronizedHashMap
 
 ## ConcurrentHashMap  
-A ConcurrentHashMap is a thread-safe, high-performance data structure in Java that allows multiple threads to access and modify it concurrently without locking the entire map. It achieves this by applying locks only to specific segments or nodes when a write operation occurs, rather than blocking all threads as a synchronized map would. This makes it ideal for multi-threaded applications, and it does not permit null keys or values.
+A ConcurrentHashMap is a thread-safe, high-performance data structure in Java that allows multiple threads to access and modify it concurrently without locking the entire map. It achieves this by applying locks only to specific segments or nodes when a write operation occurs, rather than blocking all threads as a synchronized map would. This makes it ideal for multi-threaded applications, and it does not permit null keys or values.  
+
+#### Key features
+
+* Thread-safe: Multiple threads can read and write to the map at the same time, making it suitable for concurrent programming. 
+
+* High concurrency: Unlike synchronized maps that lock the entire structure, ConcurrentHashMap uses fine-grained locking (e.g., locking only the node or bucket being accessed) to allow for greater parallelism. 
+* No nulls: It does not allow null keys or null values. 
+* Atomic operations: Provides atomic methods like putIfAbsent() and computeIfAbsent() to perform conditional operations safely. 
+* Performance: Offers better performance than a synchronized map because it doesn't lock the entire map for every operation. 
+* Implementation: It implements the ConcurrentMap and Map interfaces.
+
+#### How it works
+
+* Bin-level locking: When a thread needs to write to the map, it only acquires a lock on the specific bin or node being modified, leaving other parts of the map open for other threads to access.  
+* Concurrent reads: Read operations can typically proceed without waiting for write locks to be released, further increasing performance. 
+* Default concurrency level: The default concurrency level is 16, meaning up to 16 threads can modify the map's contents simultaneously (depending on the internal implementation)  
+
 
