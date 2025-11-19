@@ -15,7 +15,7 @@ Design Patterns ( 3 Categories around 24 Patterns )
 
 Microservice FAQs, Microservice Design Patterns ( Brush-up As many as you can )
 
-## HashMap  
+## HashMap                                                                                              [Home](https://github.com/pradeepmygit1/myfaqsdump/blob/main/README.md)
 * Key-Value Storage: HashMap stores elements as (Key, Value) pairs. Keys must be unique, while values can be duplicated.  
 * Hashing for Efficiency: It utilizes hashing internally for efficient storage and retrieval of elements.  
   This allows for average O(1) time complexity for put, get, and remove operations.
@@ -41,8 +41,9 @@ The HashMap class provides various methods for interacting with the stored data:
 The location in the array (bucket) for an entry is determined by the key's hashCode() method.  
 Collisions, where different keys hash to the same bucket, are handled using a linked list or,  
 in Java 8 and later, a balanced tree within that bucket.
+                                                                                          [Home](https://github.com/pradeepmygit1/myfaqsdump/blob/main/README.md)
 
-## SynchronizedHashMap  
+## SynchronizedHashMap                                                                    [Home](https://github.com/pradeepmygit1/myfaqsdump/blob/main/README.md)
 
 A synchronized hashmap is a regular HashMap that has been made thread-safe by wrapping it with synchronization mechanisms,   
 most commonly using the Collections.synchronizedMap() method. This approach locks the entire map for every read and write operation, making it safe for multi-threaded environments but less performant than ConcurrentHashMap due to potential contention.  
@@ -60,10 +61,10 @@ most commonly using the Collections.synchronizedMap() method. This approach lock
 * Use for single-threaded environments: If your application is not multi-threaded, a standard HashMap is faster.  
 * Use for simple synchronization: It's useful when you need to ensure that individual method calls are atomic and you want a simple way to make a HashMap thread-safe.   
 * Consider alternatives for high concurrency: For applications with high thread contention, ConcurrentHashMap is a much better choice due to its superior performance.  
+                                                                                                [Home](https://github.com/pradeepmygit1/myfaqsdump/blob/main/README.md)
 
 
-
-## ConcurrentHashMap  
+## ConcurrentHashMap                                                                            [Home](https://github.com/pradeepmygit1/myfaqsdump/blob/main/README.md)
 A ConcurrentHashMap is a thread-safe, high-performance data structure in Java that allows multiple threads to access and modify it concurrently without locking the entire map. It achieves this by applying locks only to specific segments or nodes when a write operation occurs, rather than blocking all threads as a synchronized map would. This makes it ideal for multi-threaded applications, and it does not permit null keys or values.  
 
 #### Key features
@@ -81,5 +82,5 @@ A ConcurrentHashMap is a thread-safe, high-performance data structure in Java th
 * Bin-level locking: When a thread needs to write to the map, it only acquires a lock on the specific bin or node being modified, leaving other parts of the map open for other threads to access.  
 * Concurrent reads: Read operations can typically proceed without waiting for write locks to be released, further increasing performance. 
 * Default concurrency level: The default concurrency level is 16, meaning up to 16 threads can modify the map's contents simultaneously (depending on the internal implementation)  
-
+                                                                                          [Home](https://github.com/pradeepmygit1/myfaqsdump/blob/main/README.md)
 
